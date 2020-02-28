@@ -1,3 +1,6 @@
+#! python3
+# This program downloads a PDF to Desktop from the Procore Website
+
 import requests
 
 url = "https://app.procore.com/731567/project/submittal_logs/16718713/view_pdf"
