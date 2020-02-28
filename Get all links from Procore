@@ -1,6 +1,4 @@
 #! python3
-# This program extracts locations from excel
-# and outputs GPS coordinates from latlong.net
 
 import openpyxl, pyperclip, requests, os, bs4
 
@@ -11,7 +9,6 @@ import time
 driver = webdriver.Firefox()
 driver.get('https://app.procore.com/731567/project/submittal_logs/list?page=1&view=list&filters%5Bresponse_id%5D%5B%5D=6636482&filters%5Bresponse_id%5D%5B%5D=6636489&sort%5Battribute%5D=number&sort%5Bdirection%5D=desc&per_page=150')
 time.sleep(30)
-
 
 #Get all links from a webpage
 for a in driver.find_elements_by_xpath('.//a'):
