@@ -1,0 +1,5 @@
+import requests
+
+url = "https://app.procore.com/731567/project/submittal_logs/16718713/view_pdf"
+r = requests.get(url, allow_redirects=True)
+open('newpdf.pdf', 'wb').write(r.content)
